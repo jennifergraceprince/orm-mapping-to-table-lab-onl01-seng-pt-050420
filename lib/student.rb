@@ -22,7 +22,7 @@ class Student
 
   def self.drop_table
     sql = <<-SQL
-      DROP TABLE if exists students
+      DROP TABLE IF EXISTS students
     SQL
 
     DB[:conn].execute(sql)  
